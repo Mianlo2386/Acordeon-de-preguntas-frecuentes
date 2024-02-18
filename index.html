@@ -11,24 +11,43 @@
 <body>
   <div class="background-container">
     <img src="images/background-pattern-desktop.svg" alt="Background Pattern">
-</div>
+  </div>
 
-    <div class="accordion">
-      <div class="encabezado">
-        <div class="star"></div>
-        <h1>FAQs</h1>
-      </div>
-      <div class="pregunta"><h4>Como puedes contactarnos? </h4><i class="bi bi-plus-circle-fill"></i>
-      </div>
-      <div class="pregunta"><h4>Tienen una tienda física?</h4> <i class="bi bi-plus-circle-fill"></i>
-      </div>
-      <div class="pregunta"><h4>Se puede comprar por MP?</h4><i class="bi bi-plus-circle-fill"></i>
-      </div>
-      <div class="pregunta"><h4>Como consigo un bono de promoción?</h4><i class="bi bi-plus-circle-fill"></i>
-      </div>
-        
+  <div class="accordion">
+    <div class="encabezado">
+      <div class="star"></div>
+      <h1>FAQs</h1>
     </div>
-      <div class="ribbon">Mianlo &copy2024</div>
-      <script src="script.js"></script>
+    <div class="pregunta" onclick="toggleRespuesta(1)">
+      <h4>Como puedes contactarnos? </h4>
+      <i id="icono1" class="bi bi-plus-circle-fill"></i>
+    </div>
+    <div id="respuesta1" class="respuesta">
+      <p>Nuestro WhatsApp: 123-456-7890 o nuestro correo electrónico: store@gmail.com</p>
+    </div>
+    <div class="pregunta" onclick="toggleRespuesta(2)">
+      <h4>Tienen una tienda física?</h4>
+      <i id="icono2" class="bi bi-plus-circle-fill"></i>
+    </div>
+    <div id="respuesta2" class="respuesta">
+      <p>Si, nos encontramos en el barrio de Belgrano. Envianos un Whatsapp o un email y te pasaremos nuestra ubicación.</p>
+    </div>
+    <div class="pregunta" onclick="toggleRespuesta(3)">
+      <h4>Se puede comprar por MP?</h4>
+      <i id="icono3" class="bi bi-plus-circle-fill"></i>
+    </div>
+    <div id="respuesta3" class="respuesta">
+      <p>Si, aceptamos todo tipo de transferencias.</p>
+    </div>
+    <div class="pregunta" onclick="toggleRespuesta(4)">
+      <h4>Como consigo un bono de promoción?</h4>
+      <i id="icono4" class="bi bi-plus-circle-fill"></i>
+    </div>
+    <div id="respuesta4" class="respuesta">
+      <p>Los bonos son por compras acumuladas, pero si es tu primera compra ya tienes un descuento!</p>
+    </div>
+  </div>
+  <div class="ribbon">Mianlo &copy2024</div>
+  <script src="script.js"></script>
 </body>
 </html>
