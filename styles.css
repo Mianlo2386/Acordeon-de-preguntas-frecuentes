@@ -32,7 +32,7 @@
   border-radius: 15px; 
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   z-index: 1; 
-  transition: top 0.3s ease; 
+  transition: top 1s ease; 
 }
 
   .encabezado {
@@ -97,17 +97,19 @@
 }
 .respuesta {
   display: none;
-  background-color: #f0f0f0;
-  /* border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px; */
+  background-color: #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; 
   padding: 15px;
   margin-top: -1px; 
   position: relative; 
+  
+  transition: height 0.3s ease; 
 }
 
 .respuesta p {
   margin: 0;
-  padding: 5px;
+  padding-left: 13px;
   font-size: 14px; 
 }
 
@@ -120,5 +122,22 @@
   cursor: pointer;
 }
 
+@media (max-width:768px) {
+  .accordion {
+    height: 70vh;
+  }
+  .ribbon {
+    bottom: 0;
+    z-index: 1;
+  }
+}
+@media (max-width: 425px) {
+  .accordion {
+    top: 10%;
+    height: 75vh;
+  }
 
- 
+  .background-container img {
+    content: url('images/background-pattern-mobile.svg'); 
+  }
+}
